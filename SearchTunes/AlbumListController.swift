@@ -24,7 +24,9 @@ class AlbumListController: UITableViewController {
         }
     }
     
-    var dataSource = AlbumListDataSource(albums: [])
+    lazy var dataSource: AlbumListDataSource = {
+        return AlbumListDataSource(albums: [], tableView: self.tableView)
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +54,7 @@ class AlbumListController: UITableViewController {
                 
                 client.lookupAlbum(withId: selectedAlbum.id) { album, error in
                     albumDetailController.album = album
+                    albumDetailController.artworkView.image = selectedAlbum.artwork
                 }
                 
             }

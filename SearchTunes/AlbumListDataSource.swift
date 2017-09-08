@@ -11,8 +11,13 @@ import UIKit
 class AlbumListDataSource: NSObject, UITableViewDataSource {
     private var albums: [Album]
     
-    init(albums: [Album]) {
+    let pendingOperations = PendingOperations()
+    
+    var tableView = UITableView()
+    
+    init(albums: [Album], tableView: UITableView) {
         self.albums = albums
+        self.tableView = tableView
         super.init()
     }
     
@@ -34,6 +39,10 @@ class AlbumListDataSource: NSObject, UITableViewDataSource {
         albumCell.configure(with: viewModel)
         albumCell.accessoryType  = .disclosureIndicator
         
+        if album.artworkState == .placeholder {
+            downloadArtwork(for: album, atIndexPath: indexPath)
+        }
+        
         return albumCell
     }
     
@@ -44,5 +53,26 @@ class AlbumListDataSource: NSObject, UITableViewDataSource {
     
     func update(with albums: [Album]) {
         self.albums = albums
+    }
+    
+    func downloadArtwork(for album: Album, atIndexPath indexPath: IndexPath) {
+        if let _ = pendingOperations.downloadsInProgress[indexPath] {
+            return
+        }
+        
+        let downloader = ArtworkDownloader(album: album)
+        
+        downloader.completionBlock = {
+            if downloader.isCancelled {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.pendingOperations.downloadsInProgress.removeValue(forKey: indexPath)
+                self.tableView.reloadRows(at: [indexPath], with: .automatic)
+            }
+        }
+        pendingOperations.downloadsInProgress[indexPath] = downloader
+        pendingOperations.downloadQueue.addOperation(downloader)
     }
 }
