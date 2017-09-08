@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1541BCFB1F620941002E9214 /* ItunesMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1541BCFA1F620941002E9214 /* ItunesMedia.swift */; };
 		1541BCFD1F6209A0002E9214 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1541BCFC1F6209A0002E9214 /* Endpoint.swift */; };
+		15949C5A1F623F5B00B551C1 /* ItunesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15949C591F623F5B00B551C1 /* ItunesEntity.swift */; };
+		15949C5C1F6242C900B551C1 /* QueryItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15949C5B1F6242C900B551C1 /* QueryItemProvider.swift */; };
+		15949C5E1F62450100B551C1 /* ItunesAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15949C5D1F62450100B551C1 /* ItunesAttributes.swift */; };
 		15AD6DCE1F6101FB00DEFA98 /* AlbumListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD6DCD1F6101FB00DEFA98 /* AlbumListController.swift */; };
 		15AD6DD01F61029700DEFA98 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD6DCF1F61029700DEFA98 /* AlbumCell.swift */; };
 		15AD6DD21F61041100DEFA98 /* AlbumListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD6DD11F61041100DEFA98 /* AlbumListDataSource.swift */; };
@@ -35,6 +38,9 @@
 /* Begin PBXFileReference section */
 		1541BCFA1F620941002E9214 /* ItunesMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesMedia.swift; sourceTree = "<group>"; };
 		1541BCFC1F6209A0002E9214 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		15949C591F623F5B00B551C1 /* ItunesEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesEntity.swift; sourceTree = "<group>"; };
+		15949C5B1F6242C900B551C1 /* QueryItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemProvider.swift; sourceTree = "<group>"; };
+		15949C5D1F62450100B551C1 /* ItunesAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesAttributes.swift; sourceTree = "<group>"; };
 		15AD6DCD1F6101FB00DEFA98 /* AlbumListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListController.swift; sourceTree = "<group>"; };
 		15AD6DCF1F61029700DEFA98 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		15AD6DD11F61041100DEFA98 /* AlbumListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListDataSource.swift; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 			children = (
 				1541BCFA1F620941002E9214 /* ItunesMedia.swift */,
 				1541BCFC1F6209A0002E9214 /* Endpoint.swift */,
+				15949C591F623F5B00B551C1 /* ItunesEntity.swift */,
+				15949C5B1F6242C900B551C1 /* QueryItemProvider.swift */,
+				15949C5D1F62450100B551C1 /* ItunesAttributes.swift */,
 			);
 			name = Endpoint;
 			sourceTree = "<group>";
@@ -242,10 +251,13 @@
 				15FD59331F5F6699000CA7D9 /* Song.swift in Sources */,
 				15FD592D1F5F6398000CA7D9 /* Artist.swift in Sources */,
 				15FD591A1F5F6371000CA7D9 /* ViewController.swift in Sources */,
+				15949C5A1F623F5B00B551C1 /* ItunesEntity.swift in Sources */,
 				15AD6DD51F61050C00DEFA98 /* AlbumCellViewModel.swift in Sources */,
 				15FD59181F5F6371000CA7D9 /* AppDelegate.swift in Sources */,
 				15AD6DDB1F610E6200DEFA98 /* AlbumDetailDataSource.swift in Sources */,
+				15949C5E1F62450100B551C1 /* ItunesAttributes.swift in Sources */,
 				15AD6DD21F61041100DEFA98 /* AlbumListDataSource.swift in Sources */,
+				15949C5C1F6242C900B551C1 /* QueryItemProvider.swift in Sources */,
 				15AD6DDF1F610F5C00DEFA98 /* SongViewModel.swift in Sources */,
 				15AD6DD71F610B7800DEFA98 /* AlbumDetailController.swift in Sources */,
 				15DCDEDD1F5F6A4A009E202B /* SearchResultsController.swift in Sources */,
