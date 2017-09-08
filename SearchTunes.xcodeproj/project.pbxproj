@@ -14,6 +14,7 @@
 		15949C5E1F62450100B551C1 /* ItunesAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15949C5D1F62450100B551C1 /* ItunesAttributes.swift */; };
 		15949C611F62479500B551C1 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15949C601F62479500B551C1 /* JSONDownloader.swift */; };
 		15949C631F62481400B551C1 /* ItunesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15949C621F62481400B551C1 /* ItunesError.swift */; };
+		15949C651F62492500B551C1 /* ItunesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15949C641F62492500B551C1 /* ItunesAPIClient.swift */; };
 		15AD6DCE1F6101FB00DEFA98 /* AlbumListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD6DCD1F6101FB00DEFA98 /* AlbumListController.swift */; };
 		15AD6DD01F61029700DEFA98 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD6DCF1F61029700DEFA98 /* AlbumCell.swift */; };
 		15AD6DD21F61041100DEFA98 /* AlbumListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD6DD11F61041100DEFA98 /* AlbumListDataSource.swift */; };
@@ -45,6 +46,7 @@
 		15949C5D1F62450100B551C1 /* ItunesAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesAttributes.swift; sourceTree = "<group>"; };
 		15949C601F62479500B551C1 /* JSONDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
 		15949C621F62481400B551C1 /* ItunesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesError.swift; sourceTree = "<group>"; };
+		15949C641F62492500B551C1 /* ItunesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesAPIClient.swift; sourceTree = "<group>"; };
 		15AD6DCD1F6101FB00DEFA98 /* AlbumListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListController.swift; sourceTree = "<group>"; };
 		15AD6DCF1F61029700DEFA98 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		15AD6DD11F61041100DEFA98 /* AlbumListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListDataSource.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				15949C601F62479500B551C1 /* JSONDownloader.swift */,
 				15949C621F62481400B551C1 /* ItunesError.swift */,
+				15949C641F62492500B551C1 /* ItunesAPIClient.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				15AD6DDF1F610F5C00DEFA98 /* SongViewModel.swift in Sources */,
 				15AD6DD71F610B7800DEFA98 /* AlbumDetailController.swift in Sources */,
 				15DCDEDD1F5F6A4A009E202B /* SearchResultsController.swift in Sources */,
+				15949C651F62492500B551C1 /* ItunesAPIClient.swift in Sources */,
 				15AD6DCE1F6101FB00DEFA98 /* AlbumListController.swift in Sources */,
 				15AD6DDD1F610ED000DEFA98 /* SongCell.swift in Sources */,
 				15FD592F1F5F63EE000CA7D9 /* Genre.swift in Sources */,
